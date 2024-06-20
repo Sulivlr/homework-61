@@ -1,9 +1,11 @@
+import CountryInfo from './components/CountryInfo/CountryInfo';
+
 const App = () => {
   return (
     <>
-      <h1>Hello World!</h1>
+      <CountryInfo />
     </>
   );
 };
 
-export default App
+export default App;
