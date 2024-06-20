@@ -1,22 +1,23 @@
-import React from 'react';
-
-interface Props {
-  name: string;
-  capital: string;
-  borders: string[];
-  onClick: React.MouseEventHandler;
-}
-
-const PostCountries: React.FC<Props> = React.memo(({name, capital, borders,onClick}) => {
-  return (
-    <article className="PostCountries" onClick={onClick}>
-      <h2>{name}</h2>
-      <div className="Info">
-        <div className="Capital">{capital}</div>
-        <div className="Borders">{borders}</div>
-      </div>
-    </article>
-  );
-});
-
-export default PostCountries;
+// import React from 'react';
+//
+// interface Props extends React.PropsWithChildren {
+//   name: string;
+//   capital: string;
+//   borders: string[];
+//   onClick: React.MouseEventHandler;
+// }
+//
+// const PostCountries: React.FC<Props> =({ name, capital, borders, onClick,children }) => {
+//   return (
+//     <article className="post-country" onClick={onClick}>
+//       <h3>{name}</h3>
+//       <div className="info">
+//         <div className="capital"><strong>Столица:</strong> {capital}</div>
+//         <div className="borders"><strong>Границы:</strong> {borders}</div>
+//         <div>{children}</div>
+//       </div>
+//     </article>
+//   );
+// };
+//
+// export default PostCountries;

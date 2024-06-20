@@ -1,12 +1,9 @@
-interface Country {
-  id: number;
+export interface Country {
+  alpha3Code: string;
   name: string;
-  borders: string[];
-  capital: string;
 }
 
-interface CountryInfo {
+export interface InfoCountry {
   name: string;
   borders: string[];
-  capital: string;
 }
