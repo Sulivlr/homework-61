@@ -1,6 +1,8 @@
 interface Country {
-  alpha3Code: string;
+  id: number;
   name: string;
+  borders: string[];
+  capital: string;
 }
 
 interface CountryInfo {
